@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+  box-sizing: border-box;
+}
+
+.splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #f7e370;
+  color: #3e2f34;
+  text-align: center;
+  z-index: 999;
+  line-height: 100vh;
+  width: 100%;
+}
+
+.splash.none {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #f7e370;
+  color: #3e2f34;
+  text-align: center;
+  z-index: -10;
+  line-height: 100vh;
+  width: 100%;
+  transition: all 1s;
+  opacity: 0;
+}
+
+.splash1.none {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #f7e370;
+  color: #3e2f34;
+  text-align: center;
+  z-index: -10;
+  line-height: 100vh;
+  width: 100%;
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.Salam {
+  opacity: 0;
+  animation: fadeIn 1.5s 2 ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.hero {
+  background-color: #70f7b4;
+  padding: 100px 0 120px 0;
+  background-image: url(https://static.esrgear.com/blog/wp-content/uploads/2019/11/New-Apple-Products-Worth-Looking-Forward-to-in-2020.jpg);
+  background-size: cover;
+  color: black;
+  text-align: center;
+}
+
+h1.judul {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 90px;
+  text-align: center;
+  color: #3e2f34;
+  margin: auto;
+}
+
+h2.subJudul {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #3e2f34;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 100px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+li {
+  display: inline-block;
+}
+
+li a {
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #3e2f34;
+  margin: 0 30px;
+}
+
+li a:hover {
+  color: #f7e370;
+}
+
+main {
+  padding: 0px 100px 100px 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  width: 70%;
+}
+
+article {
+  margin-top: 50px;
+}
+
+h1.judulArtikel {
+  color: #3e2f34;
+}
+
+h2.judulSection {
+  color: #3e2f34;
+}
+
+section {
+  background: #55ab84;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  padding-bottom: 40px;
+}
+
+.topSection {
+  background: #ffffff;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px 50px 0px 0px;
+  padding: 30px;
+  /* padding-bottom: 30; */
+}
+
+.topSection img {
+  margin: 30px auto;
+  width: 60%;
+  display: flex;
+}
+
+p.artikel {
+  font-size: 18px;
+  line-height: 27px;
+  margin: 20px 30px 0 30px;
+  color: #ffffff;
+}
+
+aside {
+  margin-top: 86px;
+  width: 25%;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  padding: 10%;
+}
+
+figure {
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 10%;
+}
+
+aside img {
+  width: 70%;
+  border-radius: 50%;
+  margin: 30px auto;
+}
+
+aside h3 {
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #3e2f34;
+}
+
+footer {
+  background-color: grey;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+h3.Footer {
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #3e2f34;
+}
+
+h2.credits {
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: black;
+}
+
+@media screen and (max-width: 411px) {
+  h1.judul {
+    font-style: normal;
+    line-height: 45px;
+    font-size: 30px;
+  }
+
+  h2.subJudul {
+    font-size: 10px;
+  }
+
+  nav {
+    padding: 15px 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  li a {
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0 10px;
+  }
+
+  p.tanggal {
+    display: none;
+  }
+
+  main {
+    flex-direction: column;
+    padding: 0px 20px 20px 20px;
+  }
+
+  article {
+    margin-top: 20px;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  h1.judulArtikel {
+    font-size: 18px;
+  }
+
+  h2.judulSection {
+    font-size: 16px;
+  }
+
+  section {
+    border-radius: 20px;
+  }
+
+  .topSection {
+    padding: 15px;
+    border-radius: 20px 20px 0px 0px;
+  }
+
+  .topSection img {
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  p.artikel {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+  }
+
+  aside {
+    margin-top: 20px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .profile {
+    border-radius: 20px;
+    padding: 15px 0 35px 0;
+  }
+
+  aside img {
+    width: 50%;
+    border-radius: 50%;
+    margin: 20px auto;
+  }
+
+  aside h3 {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  h3.Footer {
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #3e2f34;
+  }
+
+  h2.credits {
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: #3e2f34;
+  }
+}
